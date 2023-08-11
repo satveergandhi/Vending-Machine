@@ -14,7 +14,9 @@ import lombok.NoArgsConstructor;
 @Data
 public class VendingItem {
 
-	 	private int id;
+	    @Id
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private int id;
 	 	
 	    private String name;
 	    
