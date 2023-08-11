@@ -26,7 +26,7 @@ public class VendingMachine {
     }
 
     public List<VendingItem> getItemsInRow(int row) {
-        return itemRepository.findByRowNumber(row);
+        return itemRepository.findByRow(row);
     }
 
     public void buyItem(int itemId) {
