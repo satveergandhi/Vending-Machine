@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Item</title>
+</head>
+<body>
+    <h1>Buy Item: <span th:text="${item.name}"></span></h1>
+    <form method="post" th:action="@{/vending/buy/{itemId}(itemId=${item.id})}">
+        Amount: <input type="text" name="amount" required>
+        <button type="submit">Buy</button>
+    </form>
+</body>
+</html>
